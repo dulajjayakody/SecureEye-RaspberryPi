@@ -10,3 +10,13 @@ def play_alarm(duration):
     time.sleep(duration)
     
     alarm_sound.stop()
+
+
+while True:
+    cap = cv2.VideoCapture(0)    
+    ret, frame = cap.read()
+    cap.release()
+    cv2.destroyAllWindows()
+    
+cap.release()
+cv2.destroyAllWindows()
